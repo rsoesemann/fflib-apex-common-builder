@@ -1,6 +1,6 @@
 Test data Builder for FinancialForce Apex Common
 ================================================
-fflib-apex-common-builder is an extension to Apex Common and helps you write better integration tests. Better in the sense of shorter, more concise. And by that more readable, more understandble.
+*fflib-apex-common-builder* is an extension to [ApexCommon](https://github.com/financialforcedev/fflib-apex-common) and helps you write better [integration tests](https://en.wikipedia.org/wiki/Integration_testing). Better in the sense of shorter, more concise. And by that more readable, more understandble.
     
 [![Build Status](https://travis-ci.org/financialforcedev/fflib-apex-common-builder.svg)](https://travis-ci.org/financialforcedev/fflib-apex-common-builder) 
 
@@ -26,9 +26,9 @@ About this library
 - Q: Why that? *A: Because 90% of the LOC are setup code. And the majority cares about creating records in the right order.*
 - Q: Ok, but isn't that how Salesforce works. *A: Maybe. But why not make our lifes easiert and hide all the technical plumbing away?*
 
-We need integration test for every non-trivial Salesforce application, because they are database applications. If we don't prove that all those well-tested, perfectly isolated or mocked units work with the database we don't know that our application will work in the real world.
+We need integration test for every non-trivial Salesforce application, simply because they are database applications. If we don't prove that all those well-tested, perfectly isolated or mocked units work with the database we don't know that our application will work in the real world.
 
-Writing Apex integration tests are a pain. Just take this integration test from a [Trailhead module](https://trailhead.salesforce.com/modules/apex_patterns_sl/units/apex_patterns_sl_apply_uow_principles)
+Writing Apex integration tests is a pain. Just take this integration test from a [Trailhead module](https://trailhead.salesforce.com/modules/apex_patterns_sl/units/apex_patterns_sl_apply_uow_principles)
 
     @isTest
     private static void testService() {
