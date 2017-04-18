@@ -21,12 +21,20 @@ History
 
 About this library
 ==================
-- Q: Why do we need this library?  *A: Because you need integration tests.*
-- Q: I have integration tests! *A: Sure. We all do. But they are complex and by that hard read and maintain.*
-- Q: Why that? *A: Because 90% of the LOC are setup code. And the majority cares about creating records in the right order.*
-- Q: Ok, but isn't that how Salesforce works. *A: Maybe. But why not make our lifes easiert and hide all the technical plumbing away?*
+- Q: Why do we need this library?  
+   - *A: Because you need integration tests.*
+- Q: I have integration tests!   
+   - *A: Sure. We all do. But they are complex and by that hard read and maintain.*
+- Q: Why that?   
+   - *A: Because 90% of the LOC are setup code. And the majority cares about creating records in the right order.*
+- Q: Ok, but isn't that how Salesforce works.   
+   - *A: Maybe. But why not make our lifes easiert and hide all the technical plumbing away?*
+   
+### Integration test are crucial   
 
 We need integration test for every non-trivial Salesforce application, simply because they are database applications. If we don't prove that all those well-tested, perfectly isolated or mocked units work with the database we don't know that our application will work in the real world.
+
+### Good test = Reveals its intention + Fits one Screen
 
 Writing Apex integration tests is a pain. Just take this integration test from a [Trailhead module](https://trailhead.salesforce.com/modules/apex_patterns_sl/units/apex_patterns_sl_apply_uow_principles)
 
